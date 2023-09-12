@@ -1,4 +1,5 @@
 import './components/MovieGrid.js';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import MovieGrid from './components/MovieGrid';
 
