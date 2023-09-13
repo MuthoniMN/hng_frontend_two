@@ -22,9 +22,3 @@ body{
 .gray{
   color: #9CA3AF;
 }
-
-.movies{
-  flex-wrap: wrap;
-  gap: 56px;
-  row-gap: 80px;
-}
