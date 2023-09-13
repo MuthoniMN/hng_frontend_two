@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
+import MovieGridTitle from "./MovieGridTitle";
 
 const MovieGrid = ({ movies, favoriteComponent}) => {
     const FavoriteComponent =  favoriteComponent
     return <section className="row m-3 movies" >
+        <MovieGridTitle />
+        <section className="row movieGrid">
         {movies.map((movie, index) => {
             if (index < 10) {
                 return <div className="card d-flex justify-content-start flex-direction-column" data-testid="movie-card" id={movie.id}>
@@ -15,6 +18,7 @@ const MovieGrid = ({ movies, favoriteComponent}) => {
                 </div>
             }
         })}
+        </section>
     </section>
 }
 

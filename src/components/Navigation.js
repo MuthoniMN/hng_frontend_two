@@ -8,7 +8,7 @@ const Navigation = () => {
     const [searchTerm, setSearchTerm] = useState("")
 
     return (
-        <nav className="d-flex mt-2 mb-2 align-items-center">
+        <nav className="d-flex pt-3 align-items-center">
             <Logo />
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
             <a href="#">Sign In</a>

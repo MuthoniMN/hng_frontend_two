@@ -2,9 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import MovieGrid from './components/MovieGrid';
 import React , { useState, useEffect } from 'react';
-import MovieGridTitle from './components/MovieGridTitle';
 import AddFavorite from './components/AddFavorite';
-import Navigation from './components/Navigation';
+import HeroSection from './components/HeroSection';
 
 function App() {
   const [favorites, setFavorites] = useState([])
@@ -24,8 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation />
-      <MovieGridTitle />
+      <HeroSection />
        <MovieGrid  movies={movies}favoriteComponent={AddFavorite}/>
     </div>
   );

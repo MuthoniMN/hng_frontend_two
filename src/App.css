@@ -2,34 +2,75 @@
 
 body{
   font-family: 'DM Sans', sans-serif;
-  padding: 0 100px;
+}
+
+.heroSection{
+  background: url('/public/Poster.png');
+  color: white;
+  height: 75vh;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.heroSection > section{
+  height: 65vh;
+  justify-content: space-between;
+  padding: 0 30px;
 }
 
 nav{
   justify-content: space-between;
+  padding: 0 100px;
 }
 
 .logo{
   gap: 16px;
 }
 
-.menu{
+.logo h1{
+  font-size: 18px;
+  color: white;
+}
+
+button{
+  padding: 8px 16px;
   border: none;
   background: #BE123C;
   color: white;
+}
+
+.menu{
   padding: 4px 8px;
   border-radius: 50%;
 }
 
 nav a{
   color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.details{
+  padding-left: 70px;
+}
+
+.current{
+  font-weight: bold;
 }
 
 .movies{
+  padding: 0 75px;
+}
+
+.movieGrid {
   gap: 56px;
 }
 
 .title{
+  padding: 0;
+  margin: 0;
   justify-content: space-between;
 }
 
@@ -44,7 +85,7 @@ nav a{
 }
 
 .card{
-  width: 220px;
+  width: 250px;
   gap: 12px;
   position: relative;
   transition: all 200ms;
@@ -68,4 +109,9 @@ nav a{
   top: 12px;
   right: 12px;
   text-align: center;
+}
+
+.ratings{
+  gap: 8px;
+  align-items: baseline;
 }
