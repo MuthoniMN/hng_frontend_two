@@ -3,8 +3,10 @@ import './App.css';
 import MovieGrid from './components/MovieGrid';
 import React , { useState, useEffect } from 'react';
 import MovieGridTitle from './components/MovieGridTitle';
+import AddFavorite from './components/AddFavorite';
 
 function App() {
+  const [favorites, setFavorites] = useState([])
   const [movies, setMovies] = useState([])
 
   const getMovieRequest = async () => {
@@ -18,10 +20,11 @@ function App() {
   useEffect(() => {
     getMovieRequest()
   }, [])
+
   return (
     <div className="App">
       <MovieGridTitle />
-    <MovieGrid  movies={movies}/>
+       <MovieGrid  movies={movies}favoriteComponent={AddFavorite}/>
     </div>
   );
 }

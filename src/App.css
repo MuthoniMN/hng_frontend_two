@@ -5,6 +5,10 @@ body{
   padding: 100px;
 }
 
+.movies{
+  gap: 56px;
+}
+
 .title{
   justify-content: space-between;
 }
@@ -17,8 +21,26 @@ body{
 .card{
   width: 220px;
   gap: 12px;
+  position: relative;
+  transition: all 200ms;
 }
 
 .gray{
   color: #9CA3AF;
+}
+
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.overlay{
+  position: absolute;
+  background: #9ca3afa2;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 12px;
+  right: 12px;
+  text-align: center;
 }
