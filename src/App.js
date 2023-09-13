@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import MovieGrid from './components/MovieGrid';
 import React , { useState, useEffect } from 'react';
+import MovieGridTitle from './components/MovieGridTitle';
 
 function App() {
   const [movies, setMovies] = useState([])
@@ -19,10 +20,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <div className='d-flex m-3 title'>
-        <h2>Featured Movies</h2>
-        <a href='#' >See More</a>
-      </div>
+      <MovieGridTitle />
     <MovieGrid  movies={movies}/>
     </div>
   );
