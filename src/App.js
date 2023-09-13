@@ -4,6 +4,7 @@ import MovieGrid from './components/MovieGrid';
 import React , { useState, useEffect } from 'react';
 import AddFavorite from './components/AddFavorite';
 import HeroSection from './components/HeroSection';
+import Footer from './components/Footer';
 
 function App() {
   const [favorites, setFavorites] = useState([])
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       <HeroSection />
        <MovieGrid  movies={movies}favoriteComponent={AddFavorite}/>
+       <Footer />
     </div>
   );
 }

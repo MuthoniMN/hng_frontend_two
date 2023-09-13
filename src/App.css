@@ -65,7 +65,7 @@ nav a{
 }
 
 .movieGrid {
-  gap: 56px;
+  gap: 78px;
 }
 
 .title{
@@ -114,4 +114,13 @@ nav a{
 .ratings{
   gap: 8px;
   align-items: baseline;
+}
+
+footer{
+  flex-direction: column;
+  gap: 36px;
+}
+
+footer > *{
+  gap: 36px;
 }
