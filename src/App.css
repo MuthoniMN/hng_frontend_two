@@ -2,7 +2,27 @@
 
 body{
   font-family: 'DM Sans', sans-serif;
-  padding: 100px;
+  padding: 0 100px;
+}
+
+nav{
+  justify-content: space-between;
+}
+
+.logo{
+  gap: 16px;
+}
+
+.menu{
+  border: none;
+  background: #BE123C;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+
+nav a{
+  color: white;
 }
 
 .movies{
@@ -13,7 +33,12 @@ body{
   justify-content: space-between;
 }
 
-.title > a{
+.link{
+  color: #BE123C;
+  gap: 12px;
+}
+
+.link a{
   color: #BE123C;
   text-decoration: none;
 }
