@@ -2,4 +2,29 @@
 
 body{
   font-family: 'DM Sans', sans-serif;
+  padding: 100px;
+}
+
+.title{
+  justify-content: space-between;
+}
+
+.title > a{
+  color: #BE123C;
+  text-decoration: none;
+}
+
+.card{
+  width: 220px;
+  gap: 12px;
+}
+
+.gray{
+  color: #9CA3AF;
+}
+
+.movies{
+  flex-wrap: wrap;
+  gap: 56px;
+  row-gap: 80px;
 }
