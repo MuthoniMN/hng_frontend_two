@@ -178,6 +178,10 @@ footer > *{
 }
 
 @media screen and (max-width:600px) {
+  nav,
+  .details{
+    padding: 0 24px;
+  }
   .clear{
     left: 0;
   }
