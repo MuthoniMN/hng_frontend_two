@@ -3,7 +3,7 @@ import React from "react";
 const Logo = () => {
     return (
         <div className="logo d-flex align-items-center">
-            <img src="./tv.svg"  alt="MovieBox"/>
+            <img src="/tv.svg"  alt="MovieBox"/>
             <h1>MovieBox</h1>
         </div>
     )

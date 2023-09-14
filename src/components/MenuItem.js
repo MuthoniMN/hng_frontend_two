@@ -1,10 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MenuItem = ( {icon, value} ) => {
     return (
         <>
-            <FontAwesomeIcon icon={faHome} />
-            <p>Home</p>
+            <FontAwesomeIcon icon={icon} />
+            <p className="pl-2">{value}</p>
         </>
     )
 }

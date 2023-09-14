@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "./Logo";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays, faHome, faRightFromBracket, faTelevision, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import MenuItem from "./MenuItem";
 
@@ -23,3 +22,5 @@ const SideBar = () => {
         </div>
     )
 }
+
+export default SideBar;

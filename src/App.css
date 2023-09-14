@@ -91,6 +91,15 @@ nav a{
   transition: all 200ms;
 }
 
+.card > *{
+  color: #000;
+  text-decoration: none;
+}
+
+.poster{
+  width: 100%;
+}
+
 .gray{
   color: #9CA3AF;
 }
@@ -98,6 +107,13 @@ nav a{
 .card:hover{
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.icon{
+  background-color: #9CA3AF;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 50%;
 }
 
 .overlay{
@@ -123,4 +139,16 @@ footer{
 
 footer > *{
   gap: 36px;
+}
+
+.sidebar{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+}
+
+.sidebar + *{
+  margin-left: 250px;
 }
