@@ -10,7 +10,7 @@ const MovieDetails = ({ movie }) => {
                 <div></div>
                 <p><span data-testid="movie-runtime">{movie.runtime}</span> minutes</p>
             </div>
-            <p data-testid="movie-overview" className="col-sm-4">{movie.overview}</p>
+            <p data-testid="movie-overview" className="movOverview">{movie.overview}</p>
         </div>
     )
 }
