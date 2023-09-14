@@ -9,14 +9,17 @@ function App() {
   let element = useRoutes([
     {
       path: "/",
-      element: <Home />,
+      element: <Home />
+    },
+    {
+      path: "/movie/",
       children: [
         {
-          path: "movie/:id",
+          path: ":id",
           element: <Movie />,
         }
       ],
-    },
+    }
   ]);
 
   return element;

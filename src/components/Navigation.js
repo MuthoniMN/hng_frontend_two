@@ -9,7 +9,7 @@ const Navigation = () => {
 
     return (
         <nav className="d-flex pt-3 align-items-center">
-            <Logo />
+            <Logo color={"white"}/>
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
             <a href="#">Sign In</a>
             <button className="menu">

@@ -1,4 +1,5 @@
-import React, {useState, useEffect, useParams} from "react";
+import React, {useState, useEffect} from "react";
+import { useParams } from "react-router-dom";
 import SideBar from "../components/SideBar";
 import MovieDetails from "../components/MovieDetails";
 
@@ -11,7 +12,7 @@ const Movie = () => {
 
         const response = await fetch(url)
         const responseJSON = await response.json()
-        setMoviedet(responseJSON.results)
+        setMoviedet(responseJSON)
     }
 
     useEffect(() => {
