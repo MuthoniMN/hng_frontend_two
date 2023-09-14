@@ -1,7 +1,7 @@
 # MovieBox Website
 A React movie app made using the TMDB API that displays the top 10 highly rated movies
 
-![MovieBox](/public/movieAppScreenshot.png)
+![MovieBox](./public/movieAppScreenshot.png)
 
 ## Tech Stack
 - React
