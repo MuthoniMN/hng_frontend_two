@@ -17,7 +17,7 @@ const Movie = () => {
 
     useEffect(() => {
         getMovieRequest()
-    }, [])
+    })
     return (
         <>
             <SideBar />

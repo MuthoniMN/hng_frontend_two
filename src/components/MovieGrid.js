@@ -23,7 +23,6 @@ const MovieGrid = ({ movies, favoriteComponent, title }) => {
                                 <FavoriteComponent />
                             </div>
                         </div>
-
                     )
                 }
             })}
