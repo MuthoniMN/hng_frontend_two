@@ -178,7 +178,7 @@ footer > *{
   background: #be123d3d;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
   nav,
   .details{
     padding: 0 24px;
