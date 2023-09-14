@@ -5,7 +5,7 @@ const MenuItem = ( {icon, value} ) => {
     return (
         <div className="d-flex gap-2">
             <FontAwesomeIcon icon={icon} />
-            <p>{value}</p>
+            <p className="d-none d-lg-block d-md-block">{value}</p>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import MenuItem from "./MenuItem";
 
 const SideBar = () => {
     return (
-        <div className="d-none d-lg-block d-md-block sidebar d-flex flex-column gap-3">
+        <div className="sidebar d-flex flex-column gap-3">
             <Logo textColor={"black"} />
             <MenuItem icon={faHome} value={"Home"} />
             <MenuItem icon={faVideoCamera} value={"Movies"} />
