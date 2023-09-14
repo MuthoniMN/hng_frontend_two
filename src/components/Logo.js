@@ -4,7 +4,7 @@ const Logo = ( {textColor} ) => {
     return (
         <div className="logo d-flex align-items-center">
             <img src="/tv.svg"  alt="MovieBox" />
-            <h1 className={`text-${textColor}`} className="d-none d-lg-block d-md-block">MovieBox</h1>
+            <h1 className={`text-${textColor} d-none d-lg-block d-md-block`}>MovieBox</h1>
         </div>
     )
 }
