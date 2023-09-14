@@ -183,6 +183,9 @@ footer > *{
     padding: 0 24px;
   }
   .clear{
-    left: 0;
+    left: 75px;
+  }
+  .sidebar{
+    width: 75px;
   }
 }
