@@ -8,7 +8,7 @@ const MovieGrid = ({ movies, favoriteComponent, title }) => {
     return <section className="row m-3 mt-5 movies" >
         <MovieGridTitle title={title} />
         <section className="row movieGrid">
-            {movies.map((movie, index) => {
+            {movies.forEach((movie, index) => {
                 if (index < 10) {
                     return (
                         <div className="card d-flex justify-content-start flex-direction-column" data-testid="movie-card" id={movie.id}>
