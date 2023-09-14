@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <div className="App">
             <HeroSection />
-            <MovieGrid movies={movies} favoriteComponent={AddFavorite} title={"Feautred Movies"}/>
+            <MovieGrid movies={movies} favoriteComponent={AddFavorite} title={"Featured Movies"}/>
             <Footer />
         </div>
     );

@@ -14,9 +14,10 @@ const HeroSection = () => {
                     <h1>John Wick 3: Parabellum</h1>
                     <Ratings fraction={"860/100"} percent={"97%"}/>
                     <p>John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
-                    <button>
-                    <FontAwesomeIcon icon={faCirclePlay} className="ml-3"/>
-                        Watch Trailer</button>
+                    <button className="d-flex gap-2 align-items-center heroBtn">
+                    <FontAwesomeIcon icon={faCirclePlay} />
+                        <p className="m-0 p-0">Watch Trailer</p>
+                        </button>
                 </section>
                 <section>
                     <p className="gray">1</p>
