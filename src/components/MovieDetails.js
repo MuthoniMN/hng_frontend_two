@@ -2,7 +2,7 @@ import React from "react";
 
 const MovieDetails = ({ movie }) => {
     return (
-        <div className="container-fluid clear p-4 mov">
+        <div className="container-fluid clear p-4 p-sm-2">
             <div className="d-flex flex-wrap gap-3 align-items-baseline justify-content-start movieDetails">
                 <h4 data-testid="movie-title">{movie.original_title}</h4> 
                 <div></div>

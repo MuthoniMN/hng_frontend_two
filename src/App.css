@@ -168,6 +168,7 @@ footer > *{
 }
 
 .clear{
+  width: auto;
   position: relative;
   top: 0;
   left: 250px;
