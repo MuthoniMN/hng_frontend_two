@@ -177,7 +177,7 @@ footer > *{
   background: #be123d3d;
 }
 
-@media screen and (sm) {
+@media screen and (max-width:600px) {
   .clear{
     left: 0;
   }
