@@ -12,7 +12,7 @@ const SideBar = () => {
             <MenuItem icon={faTelevision} value={"TV Series"} />
             <MenuItem icon={faCalendarDays} value={"Upcoming"} />
 
-            <div className="alert">
+            <div className="alert d-none d-lg-block d-md-block">
                 <h4>Play movie quizes and earn free tickets</h4>
                 <p className="gray">50k people are playing now</p>
                 <button>Start Playing</button>

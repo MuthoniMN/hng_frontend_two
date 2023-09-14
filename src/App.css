@@ -183,9 +183,12 @@ footer > *{
     padding: 0 24px;
   }
   .clear{
-    left: 75px;
+    left: 120px;
   }
   .sidebar{
-    width: 75px;
+    width: 120px;
+  }
+  .mIcon{
+    color: #BE123C;
   }
 }
