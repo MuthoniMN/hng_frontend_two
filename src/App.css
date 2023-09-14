@@ -177,3 +177,8 @@ footer > *{
   background: #be123d3d;
 }
 
+@media screen and (sm) {
+  .clear{
+    left: 0;
+  }
+}
