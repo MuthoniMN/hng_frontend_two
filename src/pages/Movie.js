@@ -8,7 +8,7 @@ const Movie = () => {
     const { id } = useParams()
 
     const getMovieRequest = async () => {
-        const url = `https://api.themoviedb.org/3/movie/${id}?api_key=fd14b8822352d61899d7c4f5f76fe82a`
+        const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}`
 
         const response = await fetch(url)
         const responseJSON = await response.json()

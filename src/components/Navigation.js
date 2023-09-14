@@ -11,7 +11,7 @@ const Navigation = () => {
         <nav className="d-flex pt-3 align-items-center">
             <Logo color={"white"}/>
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-            <a href="#">Sign In</a>
+            <a href="#" className="d-none d-lg-block">Sign In</a>
             <button className="menu">
             <FontAwesomeIcon icon={faBars} />
             </button>
