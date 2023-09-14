@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MenuItem = ( {icon, value} ) => {
     return (
-        <div className="d-flex gap-2">
+        <div className="d-flex gap-2 gap-sm-4">
             <FontAwesomeIcon icon={icon} className="mIcon"/>
             <p className="d-none d-lg-block d-md-block">{value}</p>
         </div>

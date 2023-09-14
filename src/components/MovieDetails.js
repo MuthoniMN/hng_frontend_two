@@ -2,9 +2,9 @@ import React from "react";
 
 const MovieDetails = ({ movie }) => {
     return (
-        <div className="clear p-4 container-fluid mov">
+        <div className="container-fluid clear p-4 mov">
             <div className="d-flex flex-wrap gap-3 align-items-baseline justify-content-start movieDetails">
-                <h3 data-testid="movie-title">{movie.original_title}</h3> 
+                <h4 data-testid="movie-title">{movie.original_title}</h4> 
                 <div></div>
                 <p data-testid="movie-release-date">{movie.release_date}</p> 
                 <div></div>
