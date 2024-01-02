@@ -1,11 +1,11 @@
 import React from "react";
 
-const Logo = ( {textColor} ) => {
+const Logo = ({ textColor }) => {
     return (
-        <div className="logo d-flex align-items-center">
-            <img src="/tv.svg"  alt="MovieBox" />
-            <h1 className={`text-${textColor} d-none d-lg-block d-md-block`}>MovieBox</h1>
-        </div>
+        <a href="/" className="logo d-flex align-items-center">
+            <img src="/tv.svg" alt="MovieBox" />
+            <h1 className={`d-none d-lg-block d-md-block`} style={{ color: textColor }}>MovieBox</h1>
+        </a>
     )
 }
 

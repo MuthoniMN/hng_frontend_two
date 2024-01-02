@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import SearchBar from "./SearchBar";
 import Logo from "./Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,11 +9,11 @@ const Navigation = () => {
 
     return (
         <nav className="d-flex pt-3 align-items-center gap-2">
-            <Logo color={"white"}/>
-            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-            <a href="/" className="d-none d-lg-block">Sign In</a>
+            <Logo color={"white"} />
+            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            <a href="/signup" className="d-none d-lg-block">Sign Up</a>
             <button className="menu">
-            <FontAwesomeIcon icon={faBars} />
+                <FontAwesomeIcon icon={faBars} />
             </button>
         </nav>
     )
