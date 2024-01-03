@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
-body{
+body {
   font-family: 'DM Sans', sans-serif;
   width: 100%;
 }
 
-.heroSection{
-  background: url('/public/Poster.png');
+.heroSection {
+  background: url('assets/Poster.png');
   color: white;
   height: 75vh;
   position: relative;
@@ -15,53 +15,53 @@ body{
   left: 0;
 }
 
-.heroSection > section{
+.heroSection>section {
   height: 65vh;
   justify-content: space-between;
   padding: 0 30px;
 }
 
-nav{
+nav {
   justify-content: space-between;
   padding: 0 100px;
 }
 
-.logo{
+.logo {
   gap: 16px;
 }
 
-.logo h1{
+.logo h1 {
   font-size: 18px;
   color: white;
 }
 
-button{
+button {
   padding: 8px 16px;
   border: none;
   background: #BE123C;
   color: white;
 }
 
-.menu{
+.menu {
   padding: 4px 8px;
   border-radius: 50%;
 }
 
-nav a{
+nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.details{
+.details {
   padding-left: 70px;
 }
 
-.current{
+.current {
   font-weight: bold;
 }
 
-.movies{
+.movies {
   padding: 0 75px;
 }
 
@@ -69,48 +69,48 @@ nav a{
   gap: 78px;
 }
 
-.title{
+.title {
   padding: 0;
   margin: 0;
   justify-content: space-between;
 }
 
-.link{
+.link {
   color: #BE123C;
   gap: 12px;
 }
 
-.link a{
+.link a {
   color: #BE123C;
   text-decoration: none;
 }
 
-.card{
+.card {
   width: 225px;
   gap: 12px;
   position: relative;
   transition: all 200ms;
 }
 
-.card > *{
+.card>* {
   color: #000;
   text-decoration: none;
 }
 
-.poster{
+.poster {
   width: 100%;
 }
 
-.gray{
+.gray {
   color: #9CA3AF;
 }
 
-.card:hover{
+.card:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.icon{
+.icon {
   position: absolute;
   top: 50%;
   bottom: 50%;
@@ -122,15 +122,15 @@ nav a{
   border-radius: 50%;
 }
 
-.movieDetails> div{
+.movieDetails>div {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #9CA3AF;
-  align-self:safe;
+  align-self: safe;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   background: #9ca3afa2;
   width: 30px;
@@ -141,21 +141,21 @@ nav a{
   text-align: center;
 }
 
-.ratings{
+.ratings {
   gap: 8px;
   align-items: baseline;
 }
 
-footer{
+footer {
   flex-direction: column;
   gap: 36px;
 }
 
-footer > *{
+footer>* {
   gap: 36px;
 }
 
-.sidebar{
+.sidebar {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -167,30 +167,34 @@ footer > *{
   border-radius: 0 32px 32px 0;
 }
 
-.clear{
+.clear {
   margin-left: 250px;
 }
 
-.alert{
+.alert {
   background: #be123d3d;
 }
 
-.movOverview{
+.movOverview {
   max-width: 600px;
 }
 
 @media screen and (max-width:768px) {
+
   nav,
-  .details{
+  .details {
     padding: 0 24px;
   }
-  .clear{
+
+  .clear {
     margin-left: 100px;
   }
-  .sidebar{
+
+  .sidebar {
     width: 100px;
   }
-  .mIcon{
+
+  .mIcon {
     color: #BE123C;
     font-size: 24px;
   }
