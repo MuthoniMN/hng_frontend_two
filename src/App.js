@@ -6,6 +6,7 @@ import { useRoutes } from 'react-router-dom';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import Archive from './pages/Archive';
 
 function App() {
   let element = useRoutes([
@@ -20,7 +21,24 @@ function App() {
           path: ":id",
           element: <Movie />,
         }
-      ],
+      ]
+    },
+    {
+      path: "/movies",
+      element: <Archive query={"movie/popular"} title="Popular Movies" type={"movie"} />
+    },
+    {
+      path: "/tv/",
+      children: [
+        {
+          path: ":id",
+          element: <Movie />,
+        }
+      ]
+    },
+    {
+      path: "/tv-series",
+      element: <Archive query={"tv/popular"} title="Popular TV Series" type={"tv"} />,
     },
     {
       path: "/signup",
@@ -29,6 +47,10 @@ function App() {
     {
       path: "/login",
       element: <Login />
+    },
+    {
+      path: "/upcoming",
+      element: <Archive query={"movie/upcoming"} title="Upcoming Movies" type={"movie"} />
     }
   ]);
 
