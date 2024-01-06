@@ -28,9 +28,6 @@ const Navigation = () => {
             <Logo color={"white"} />
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
             {currentUser === null ? <a href="/signup" className="d-none d-lg-block">Sign Up</a> : <button className="d-none d-lg-block" type="submit" onClick={(e) => logout(e)}>Log Out</button>}
-            <button className="menu">
-                <FontAwesomeIcon icon={faBars} />
-            </button>
         </nav>
     )
 }
