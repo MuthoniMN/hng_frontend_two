@@ -19,7 +19,7 @@ function App() {
       children: [
         {
           path: ":id",
-          element: <Movie />,
+          element: <Movie type={'movie'} />,
         }
       ]
     },
@@ -32,7 +32,7 @@ function App() {
       children: [
         {
           path: ":id",
-          element: <Movie />,
+          element: <Movie type={'tv'} />,
         }
       ]
     },

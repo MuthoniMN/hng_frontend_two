@@ -3,13 +3,14 @@ import { useParams } from "react-router-dom";
 import SideBar from "../components/SideBar";
 import MovieDetails from "../components/MovieDetails";
 
-const Movie = () => {
+const Movie = ({ type }) => {
     const [moviedet, setMoviedet] = useState([]);
     const [loading, setLoading] = useState(false);
     const { id } = useParams()
+    console.log(id)
 
     const getMovieRequest = async () => {
-        const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}`
+        const url = `https://api.themoviedb.org/3/${type}/${id}?api_key=${process.env.REACT_APP_API_KEY}`
 
         setLoading(true)
 
