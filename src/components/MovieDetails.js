@@ -14,8 +14,8 @@ const MovieDetails = ({ movie }) => {
                                 return (<Badge style={{ background: "#BE123C", color: "white" }} className="me-2" key={genre.id}>{genre.name}</Badge>)
                             }) : "No genres"}
                     </div>
-                    <p data-testid="movie-release-date">Released on: {movie.release_date}</p>
-                    <p><span data-testid="movie-runtime">Duration: {movie.runtime}</span> minutes</p>
+                    <p data-testid="movie-release-date">{movie.release_date ? `Released on: ${movie.release_date}` : `Last Aired: ${movie.last_air_date}`}</p>
+                    <p><span data-testid="movie-runtime">Duration: {movie.runtime ? movie.runtime : movie.episode_run_time || 0}</span> minutes</p>
                     <p data-testid="movie-overview" className="movOverview">{movie.overview}</p>
                     <p><a href={movie.homepage} target="blank">View the {movie.title || movie.name} website.</a></p>
                 </div>
