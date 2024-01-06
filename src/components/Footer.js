@@ -17,10 +17,11 @@ const Footer = () => {
                 <p>Press Room</p>
             </div>
             <div>
-                <p className="gray">© 2021 MovieBox by Adriana Eka Prayudha  </p>
+                <p>Developed by <a href="https://github.com/MuthoniMN">Michelle Ndiangui</a></p>
+                <p className="gray">© 2021 MovieBox Design by Adriana Eka Prayudha  </p>
             </div>
         </footer>
     )
-} 
+}
 
 export default Footer;
