@@ -16,13 +16,13 @@ const Movie = ({ type }) => {
 
         const response = await fetch(url)
         const responseJSON = await response.json()
+        setLoading(false)
 
         return responseJSON
     }
 
     useEffect(() => {
         getMovieRequest().then(data => setMoviedet(data));
-        setLoading(false)
     })
 
     if (loading) {

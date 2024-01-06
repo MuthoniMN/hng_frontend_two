@@ -18,7 +18,7 @@ const SearchBar = () => {
         setSearchTerm(val);
         fetchData(val)
             .then(results => setSearchResults(results.results))
-
+        console.log(searchResults)
     }
 
     return (

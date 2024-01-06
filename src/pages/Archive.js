@@ -17,7 +17,7 @@ const Archive = ({ query, title, type }) => {
 
     useEffect(() => {
         getMovieRequest()
-    }, [])
+    })
 
     return (
         <div className="App">
