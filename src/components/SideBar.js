@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import { faCalendarDays, faHome, faRightFromBracket, faTelevision, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightToBracket, faCalendarDays, faHome, faRightFromBracket, faTelevision, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import MenuItem from "./MenuItem";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
@@ -8,6 +8,7 @@ import { signOut } from "firebase/auth";
 
 const SideBar = () => {
     const navigate = useNavigate()
+    const user = auth.currentUser
 
     async function logout(e) {
         await signOut(auth)
@@ -26,7 +27,7 @@ const SideBar = () => {
             <MenuItem icon={faTelevision} value={"TV Series"} link={"/tv-series"} />
             <MenuItem icon={faCalendarDays} value={"Upcoming"} link={"/upcoming"} />
 
-            <MenuItem icon={faRightFromBracket} value={"Log Out"} onClick={(e) => logout(e)} />
+            {user ? <MenuItem icon={faRightFromBracket} value={"Log Out"} onClick={(e) => logout(e)} /> : <MenuItem icon={faArrowRightToBracket} value={"Sign Up"} link={"/signup"} />}
         </div>
     )
 }
