@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Archive from './pages/Archive';
+import Person from './pages/Person';
+
 
 function App() {
   let element = useRoutes([
@@ -20,6 +22,15 @@ function App() {
         {
           path: ":id",
           element: <Movie type={'movie'} />,
+        }
+      ]
+    },
+    {
+      path: "/person/",
+      children: [
+        {
+          path: ":id",
+          element: <Person />,
         }
       ]
     },
