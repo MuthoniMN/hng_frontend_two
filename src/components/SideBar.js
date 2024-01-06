@@ -7,13 +7,11 @@ import { auth } from "../firebase";
 import { signOut } from "firebase/auth";
 
 const SideBar = () => {
-    const { setUser } = useAuth;
     const navigate = useNavigate()
 
     async function logout(e) {
         await signOut(auth)
             .then(data => {
-                setUser(null)
                 navigate("/")
             })
             .catch(err => console.error(err))

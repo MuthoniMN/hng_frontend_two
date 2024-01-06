@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import Logo from "./Logo";
 import { auth } from "../firebase";
