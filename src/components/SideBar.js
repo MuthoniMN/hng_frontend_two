@@ -3,7 +3,6 @@ import Logo from "./Logo";
 import { faCalendarDays, faHome, faRightFromBracket, faTelevision, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import MenuItem from "./MenuItem";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
 import { auth } from "../firebase";
 import { signOut } from "firebase/auth";
 

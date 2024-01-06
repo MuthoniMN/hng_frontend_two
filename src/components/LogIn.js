@@ -1,17 +1,17 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { Card, Form, Button } from "react-bootstrap";
-import { useAuth } from "../context/AuthContext";
 import { auth } from "../firebase"
 import { useNavigate } from "react-router-dom";
 
 export default function LogIn() {
     const navigate = useNavigate()
-    const { setUser, currentUser } = useAuth()
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
 
-    if (currentUser !== null) {
+    let user = auth.currentUser
+
+    if (user) {
         navigate("/")
     }
     const handleSubmit = async (e) => {
@@ -20,7 +20,6 @@ export default function LogIn() {
         try {
             await signInWithEmailAndPassword(auth, email, password)
                 .then(data => {
-                    setUser(data)
                     navigate("/")
                 })
                 .catch(err => console.error(err))

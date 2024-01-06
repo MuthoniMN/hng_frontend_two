@@ -1,26 +1,26 @@
 import React, { useState } from "react";
 import { Card, Form, Button } from "react-bootstrap";
-import { useAuth } from "../context/AuthContext";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase"
 import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
     const navigate = useNavigate()
-    const { setUser, currentUser } = useAuth()
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
 
-    if (currentUser !== null) {
+    let user = auth.currentUser
+
+    if (user) {
         navigate("/")
     }
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
             await createUserWithEmailAndPassword(auth, email, password)
                 .then(data => {
-                    setUser(data)
                     navigate("/")
                 })
                 .catch(err => console.error(err))
